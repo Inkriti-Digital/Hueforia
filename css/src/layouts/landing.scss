@@ -1,5 +1,27 @@
 /**
- * $LANDING
+ * $HOME
  * ==========================================================================
  * This is a placeholder and example for a view.
  */
+
+ .container{
+ 	width: 100%;
+ 	max-width: 100%;
+ }
+
+ .home{
+
+ 	.logo{
+ 		position: relative;
+ 		left: 0;
+ 		margin-top: 15px;
+ 	}
+
+ 	.main-vid{
+ 		width: 675px;
+ 		height: 740px;
+ 		background: url(../img/fpo-home.jpg) no-repeat;
+ 		background-size: 100%;
+ 		margin: 0 auto;
+ 	}
+ }
