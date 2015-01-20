@@ -1705,9 +1705,14 @@ td {
  * ==========================================================================
  * This is a placeholder and example for a view.
  */
+.clear-fix {
+  clear: both;
+}
+
 .container {
   width: 100%;
   max-width: 100%;
+  padding: 0;
 }
 
 .home .logo {
@@ -1718,9 +1723,25 @@ td {
 .home .main-vid {
   width: 675px;
   height: 740px;
-  background: url(../img/fpo-home.jpg) no-repeat;
-  background-size: 100%;
+  background: url(../img/fpo-home.jpg) no-repeat center top;
   margin: 0 auto;
+}
+.home .grid-ctnr {
+  width: 100%;
+}
+.home .grid-ctnr .grid-row {
+  width: 100%;
+}
+.home .grid-ctnr .grid-block {
+  width: 30%;
+  float: left;
+  max-height: 470px;
+}
+.home .grid-ctnr .half-block {
+  width: 20%;
+}
+.home .grid-ctnr .three-up .grid-block {
+  width: 33%;
 }
 
 /*# sourceMappingURL=styles.css.map */

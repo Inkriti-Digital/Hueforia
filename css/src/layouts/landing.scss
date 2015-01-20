@@ -4,9 +4,16 @@
  * This is a placeholder and example for a view.
  */
 
+ div{
+ 	// border: thin red dashed;
+ }
+
+ .clear-fix{ clear: both; }
+
  .container{
  	width: 100%;
  	max-width: 100%;
+ 	padding: 0;
  }
 
  .home{
@@ -20,8 +27,31 @@
  	.main-vid{
  		width: 675px;
  		height: 740px;
- 		background: url(../img/fpo-home.jpg) no-repeat;
- 		background-size: 100%;
+ 		background: url(../img/fpo-home.jpg) no-repeat center top;
  		margin: 0 auto;
+ 	}
+
+ 	.grid-ctnr{
+ 		width: 100%;
+
+ 		.grid-row{
+ 			width: 100%;
+ 		}
+
+ 		.grid-block{
+ 			width: 30%;
+ 			float: left;
+ 			max-height: 470px;
+ 		}
+
+ 		.half-block{
+ 			width: 20%;
+ 		}
+
+ 		.three-up{
+ 			.grid-block{ 
+ 				width: 33%; 
+ 			}
+ 		}
  	}
  }
