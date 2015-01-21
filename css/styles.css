@@ -1717,7 +1717,7 @@ td {
 
 .home .logo {
   position: relative;
-  left: 0;
+  left: 30px;
   margin-top: 15px;
 }
 .home .main-vid {
