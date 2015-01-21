@@ -39,13 +39,20 @@
  		}
 
  		.grid-block{
- 			width: 30%;
+ 			width: 33.33%;
  			float: left;
  			// max-height: 470px;
- 			// min-height: 320px;
+ 			// min-height: 470px;
  			border: thin red solid;
  			overflow: hidden;
  			line-height: 0;
+
+ 			.half-block{
+ 				width: 50%;
+ 				float:left;
+ 				height: 100%;
+ 				overflow: hidden;
+ 			}
 
  			img{
  				width: 100%;
@@ -54,13 +61,11 @@
  			}
  		}
 
- 		.half-block{
- 			width: 20%;
- 		}
+ 		
 
  		.three-up{
  			.grid-block{ 
- 				width: 33.33%; 
+ 				// width: 33.33%; 
  			}
  		}
  	}

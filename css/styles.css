@@ -1733,21 +1733,21 @@ td {
   width: 100%;
 }
 .home .grid-ctnr .grid-block {
-  width: 30%;
+  width: 33.33%;
   float: left;
   border: thin red solid;
   overflow: hidden;
   line-height: 0;
 }
+.home .grid-ctnr .grid-block .half-block {
+  width: 50%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+}
 .home .grid-ctnr .grid-block img {
   width: 100%;
   z-index: 1;
-}
-.home .grid-ctnr .half-block {
-  width: 20%;
-}
-.home .grid-ctnr .three-up .grid-block {
-  width: 33.33%;
 }
 
 /*# sourceMappingURL=styles.css.map */
