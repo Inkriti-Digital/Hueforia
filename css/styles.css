@@ -1742,6 +1742,42 @@ td {
   float: left;
   overflow: hidden;
   line-height: 0;
+  cursor: pointer;
+}
+.home .grid-ctnr .grid-block .block-hover {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  display: none;
+}
+.home .grid-ctnr .grid-block .block-hover .block-link {
+  position: relative;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.home .grid-ctnr .grid-block .block-hover a {
+  color: #000;
+}
+.home .grid-ctnr .grid-block .block-hover h2 {
+  color: #666;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 26px;
+  text-align: right;
+  margin: 30px;
+  margin-bottom: 5px;
+}
+.home .grid-ctnr .grid-block .block-hover .sub-title {
+  line-height: 18px;
+  font-size: 14px;
+  display: block;
+  text-align: right;
+  margin: 30px;
+  margin-top: 5px;
 }
 .home .grid-ctnr .grid-block .half-block {
   width: 50%;
