@@ -41,7 +41,17 @@
  		.grid-block{
  			width: 30%;
  			float: left;
- 			max-height: 470px;
+ 			// max-height: 470px;
+ 			// min-height: 320px;
+ 			border: thin red solid;
+ 			overflow: hidden;
+ 			line-height: 0;
+
+ 			img{
+ 				width: 100%;
+ 				// position: absolute;
+ 				z-index:1;
+ 			}
  		}
 
  		.half-block{
@@ -50,7 +60,7 @@
 
  		.three-up{
  			.grid-block{ 
- 				width: 33%; 
+ 				width: 33.33%; 
  			}
  		}
  	}

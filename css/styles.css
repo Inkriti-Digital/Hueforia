@@ -1735,13 +1735,19 @@ td {
 .home .grid-ctnr .grid-block {
   width: 30%;
   float: left;
-  max-height: 470px;
+  border: thin red solid;
+  overflow: hidden;
+  line-height: 0;
+}
+.home .grid-ctnr .grid-block img {
+  width: 100%;
+  z-index: 1;
 }
 .home .grid-ctnr .half-block {
   width: 20%;
 }
 .home .grid-ctnr .three-up .grid-block {
-  width: 33%;
+  width: 33.33%;
 }
 
 /*# sourceMappingURL=styles.css.map */
