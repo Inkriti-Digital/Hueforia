@@ -19,14 +19,15 @@
  .home{
 
  	.logo{
- 		position: relative;
- 		left: 30px;
- 		margin-top: 15px;
+ 		position: absolute;
+		left: 30px;
+		margin-top: 15px;
+		z-index: 20;
  	}
 
  	.main-vid{
  		width: 100%;
- 		height: 740px;
+ 		// height: 740px;
  		background: url(../img/fpo-home.jpg) no-repeat center top;
  		margin: 0 auto;
 
@@ -104,10 +105,8 @@
  			}
  		}
 
- 		.three-up{
- 			.grid-block{ 
- 				// width: 33.33%; 
- 			}
+ 		.grid-half{
+ 			width: 16.67%;
  		}
  	}
  }
