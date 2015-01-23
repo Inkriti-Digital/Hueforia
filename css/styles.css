@@ -1815,6 +1815,7 @@ td {
   text-align: right;
   margin: 30px;
   margin-bottom: 5px;
+  display: none;
 }
 .home .grid-ctnr .grid-block .block-hover .sub-title {
   line-height: 18px;
@@ -1824,6 +1825,7 @@ td {
   margin: 30px;
   margin-top: 5px;
   padding-left: 20%;
+  opacity: 0;
 }
 .home .grid-ctnr .grid-block .half-block {
   width: 50%;

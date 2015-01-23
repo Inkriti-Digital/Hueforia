@@ -21,9 +21,21 @@ $(function() {
 	$(".grid-block").hover( 
 		function() {
 			$(".block-hover", this).fadeIn();
-
+			$(".block-hover .block-link h2", this).delay(250).slideDown();
+			$(".block-hover .block-link .sub-title", this).delay(250).animate({
+  				opacity: 1
+  			}, 500, function() {
+    			// Animation complete.
+  			});
+			// $(".block-hover .sub-title").slideUp();
 		}, function() {
 			$(".block-hover", this).fadeOut();
+			$(".block-hover .block-link h2", this).fadeOut();
+			$(".block-hover .block-link .sub-title", this).delay(250).animate({
+  				opacity: 0
+  			}, 500, function() {
+    			// Animation complete.
+  			});
 	});
 
 
