@@ -50,7 +50,7 @@ $(function() {
 	    clearTimeout($.data(this, 'scrollTimer'));
 
 	    myScroll++;
-		$(".grid-block").css('margin-top', myScroll);
+		// $(".grid-block").css('margin-top', myScroll);
 	    
 	    $.data(this, 'scrollTimer', setTimeout(function() {
 	        var finalScroll= myScroll; 
@@ -58,7 +58,7 @@ $(function() {
 
 	        for ( var i = 0; i < finalScroll; i++ ) {
 	        	myScroll--;
-				$(".grid-block").css('margin-top', myScroll/5);	
+				// $(".grid-block").css('margin-top', myScroll/5);	
 	        }
 
 	        console.log("Haven't scrolled in 100ms!");
