@@ -21,18 +21,31 @@ $(function() {
 	//GRID HOVER EFFECTS
 	$(".grid-block").hover( 
 		function() {
-			$(".block-hover", this).fadeIn();
-			$(".block-hover .block-link h2", this).delay(250).slideDown();
-			$(".block-hover .block-link .sub-title", this).delay(350).animate({
+			// $(".block-hover", this).css('left', 0);
+			$(".block-hover", this).animate({
+		    // opacity: 0.25,
+		    left: "0"
+		  }, 500, function() {
+		    // Animation complete.
+		  });
+			// fadeIn();
+			$(".block-hover .block-link h2", this).delay(400).slideDown();
+			$(".block-hover .block-link .sub-title", this).delay(500).animate({
   				opacity: 1
   			}, 500, function() {
     			// Animation complete.
   			});
 			// $(".block-hover .sub-title").slideUp();
 		}, function() {
-			$(".block-hover", this).fadeOut();
+			// $(".block-hover", this).fadeOut();
+			$(".block-hover", this).animate({
+		    // opacity: 0.25,
+		    left: "-100%"
+		  }, 500, function() {
+		    // Animation complete.
+		  });
 			$(".block-hover .block-link h2", this).fadeOut();
-			$(".block-hover .block-link .sub-title", this).delay(350).animate({
+			$(".block-hover .block-link .sub-title", this).delay(400).animate({
   				opacity: 0
   			}, 500, function() {
     			// Animation complete.
