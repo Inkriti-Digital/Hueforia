@@ -2,6 +2,19 @@ $(function() {
 	var navOut = false;
 	var myScroll=1;
 
+	resizeElements();
+
+	//RESIZE-ELEMENTS
+	$(window).resize(function() {
+		resizeElements();
+    });
+
+	function resizeElements(){
+		var mainVidHeight = $(window).height();
+    	console.log(mainVidHeight);
+    	$('.main-vid').css( "height", mainVidHeight );
+	}
+
 	//NAV FUNCTIONS
 	$(".nav-burger").click(function(event) {
 		if(navOut == false){
