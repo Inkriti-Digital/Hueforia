@@ -76,16 +76,24 @@ $(function() {
 	    clearTimeout($.data(this, 'scrollTimer'));
 
 	    myScroll++;
-		// $(".grid-block").css('margin-top', myScroll);
+		$(".grid-block").css('margin-top', myScroll/5);
 	    
 	    $.data(this, 'scrollTimer', setTimeout(function() {
 	        var finalScroll= myScroll; 
 	        console.log(finalScroll);
 
-	        for ( var i = 0; i < finalScroll; i++ ) {
-	        	myScroll--;
-				// $(".grid-block").css('margin-top', myScroll/5);	
-	        }
+	    
+	        	$(".grid-block").animate({
+		    		marginTop: 0
+		  		}, 300, 'easeOutQuad', 
+		  		function() {
+			    	myScroll = 0;
+				});
+
+				
+
+				
+	        
 
 	        console.log("Haven't scrolled in 100ms!");
 	    }, 100));
