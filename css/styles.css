@@ -1743,10 +1743,6 @@ td {
   margin-top: -2px;
   text-align: center;
 }
-.home .nav .ham-close img {
-  width: 10px;
-  opacity: 0;
-}
 .home .nav .ham-ico {
   margin-top: -3px;
 }
@@ -1793,7 +1789,7 @@ td {
   width: 100%;
 }
 .home .grid-ctnr .grid-block {
-  width: 33.33%;
+  width: 33.333%;
   float: left;
   overflow: hidden;
   line-height: 0;
@@ -1849,7 +1845,7 @@ td {
   z-index: 1;
 }
 .home .grid-ctnr .grid-half {
-  width: 16.67%;
+  width: 16.666%;
 }
 .home .grid-ctnr .static-block {
   backgorund-color: white;

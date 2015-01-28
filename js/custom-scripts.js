@@ -2,17 +2,12 @@ $(document).ready(function(){
 	var navOut = false;
 	var myScroll=1;
 	var slideDirection = 0;
-
-
 	resizeElements();
 
 	//RESIZE-ELEMENTS
 	$(window).resize(function() {
 		resizeElements();
     });
-
-
-
 
 	function resizeElements(){
 		var mainVidHeight = $(window).height();
@@ -23,6 +18,23 @@ $(document).ready(function(){
 
 
 	//NAV FUNCTIONS
+	$( ".nav-burger" ).mouseenter(function() {
+		$(".ham-line").animate({ 
+			marginBottom: "6px",
+			marginTop: "6px",
+			top: '-5px'
+		}, 150, 'easeOutQuad', function() {});	
+	});
+	$( ".nav-burger" ).mouseleave(function() {
+		$(".ham-line").animate({ 
+			marginBottom: "3px",
+			marginTop: "3px",
+			top: '0px'
+
+		}, 150, 'easeOutQuad', function() {});	
+	});
+
+
 	$(".nav-burger").click(function(event) {
 		if(navOut == false){
 			$(".ham-ico").hide();
@@ -90,7 +102,7 @@ $(".grid-block").hover( function() {
 
 			$(".block-hover", this).fadeOut();
 
-			 $(".block-hover .block-link h2", this).delay(200).slideDown();
+			 $(".block-hover .block-link h2", this).delay(200).slideUp();
 			 $(".block-hover .block-link .sub-title", this).delay(200).animate({
   			 	opacity: 0
   			 }, 500, 'easeOutQuad', function() { /* Animation complete.*/ });
@@ -121,7 +133,7 @@ $(".grid-block").hover( function() {
 	    
 	    $.data(this, 'scrollTimer', setTimeout(function() {
 	        var finalScroll= myScroll; 
-	        console.log(finalScroll);
+	        // console.log(finalScroll);
 	    
 	        	$(".grid-block").animate({
 		    		marginTop: 0

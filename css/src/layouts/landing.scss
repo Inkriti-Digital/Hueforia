@@ -48,8 +48,8 @@
 	 		margin-top: -2px;
 	 		text-align: center;
 	 		img {
-	 			width: 10px;
-	 			opacity: 0;
+	 			// width: 10px;
+	 			// opacity: 0;
 	 		}
 	 	}
 
@@ -111,7 +111,7 @@
  		}
 
  		.grid-block{
- 			width: 33.33%;
+ 			width: 33.333%;
  			float: left;
  			overflow: hidden;
  			line-height: 0;
@@ -175,7 +175,7 @@
  		}
 
  		.grid-half{
- 			width: 16.67%;
+ 			width: 16.666%;
  		}
 
  		.static-block{
