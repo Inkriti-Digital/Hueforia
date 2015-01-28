@@ -95,17 +95,6 @@ $(function() {
 			} else if(slideDirection==4){				
 				$(".block-hover", this).delay(50).animate({ top: "-100%"}, 300, 'easeOutQuad', function() {});
 			}
-
-
-
-
-
-			// $(".block-hover .block-link h2", this).fadeOut();
-			// $(".block-hover .block-link .sub-title", this).delay(200).animate({
-  	// 			opacity: 0
-  	// 		}, 500, 'easeOutQuad', function() {
-   //  			// Animation complete.
-  	// 		});
 	});
 
 	//SCROLL GRID EFFECT
