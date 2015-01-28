@@ -2,6 +2,8 @@ $(document).ready(function(){
 	var navOut = false;
 	var myScroll=1;
 	var slideDirection = 0;
+
+
 	resizeElements();
 
 	//RESIZE-ELEMENTS
@@ -17,18 +19,6 @@ $(document).ready(function(){
     	console.log(mainVidHeight);
     	$('.main-vid').css( "height", mainVidHeight );
 	}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -49,7 +39,7 @@ $(document).ready(function(){
 	//GRID HOVER EFFECTS
 $(".grid-block").hover( function() {
 
-			slideDirection = Math.floor((Math.random() * 4) + 1);
+			 // slideDirection = Math.floor((Math.random() * 4) + 1);
 			console.log(slideDirection);
 
 			if(slideDirection==1){
