@@ -130,6 +130,16 @@ $(".grid-block").hover( function() {
 
 	    myScroll++;
 		$(".grid-block").css('margin-top', myScroll/2);
+
+		var eTop = $('.grid-ctnr').offset().top; //get the offset top of the element
+		var hideLockup = (eTop - $(window).scrollTop());
+  		// console.log(eTop - $(window).scrollTop()); //position of the ele w.r.t window
+
+  		if(hideLockup<=30){
+  			$(".lockup").hide();
+  		} else if(hideLockup>=30){
+  			$(".lockup").show();
+  		}
 	    
 	    $.data(this, 'scrollTimer', setTimeout(function() {
 	        var finalScroll= myScroll; 

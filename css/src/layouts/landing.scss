@@ -23,7 +23,8 @@
 		left: 30px;
 		margin-top: 15px;
 		z-index: 20;
-		// width: 250px;
+		width: 305px;
+		height: 114px;
 
 		.symbol{
 			position: absolute;
@@ -123,6 +124,10 @@
  			line-height: 0;
  			cursor: pointer;
 
+ 			@include media-query(palm){
+ 				width: 50%;
+ 			}
+
  			.block-hover{
  				position: absolute;
  				background-color: white;
@@ -182,6 +187,9 @@
 
  		.grid-half{
  			width: 16.666%;
+ 			@include media-query(palm){
+ 				width: 25%;
+ 			}
  		}
 
  		.static-block{
@@ -196,6 +204,11 @@
 				text-align: right;
 				margin: 10px;
 				margin-bottom: 5px;
+
+				@include media-query(portable){
+					font-size: 20px;
+					line-height: 18px;
+				}
  			}
 
  			.sub-title{
@@ -206,6 +219,11 @@
 				margin: 10px;
 				margin-top: 5px;
 				padding-left: 5%;
+
+				@include media-query(portable){
+					font-size: 12px;
+					line-height: 13px;
+				}
  			}
 
  			

@@ -1720,6 +1720,8 @@ td {
   left: 30px;
   margin-top: 15px;
   z-index: 20;
+  width: 305px;
+  height: 114px;
 }
 .home .logo .symbol {
   position: absolute;
@@ -1799,6 +1801,11 @@ td {
   line-height: 0;
   cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+  .home .grid-ctnr .grid-block {
+    width: 50%;
+  }
+}
 .home .grid-ctnr .grid-block .block-hover {
   position: absolute;
   background-color: white;
@@ -1851,6 +1858,11 @@ td {
 .home .grid-ctnr .grid-half {
   width: 16.666%;
 }
+@media only screen and (max-width: 768px) {
+  .home .grid-ctnr .grid-half {
+    width: 25%;
+  }
+}
 .home .grid-ctnr .static-block {
   backgorund-color: white;
 }
@@ -1864,6 +1876,12 @@ td {
   margin: 10px;
   margin-bottom: 5px;
 }
+@media only screen and (max-width: 1024px) {
+  .home .grid-ctnr .static-block h2 {
+    font-size: 20px;
+    line-height: 18px;
+  }
+}
 .home .grid-ctnr .static-block .sub-title {
   line-height: 16px;
   font-size: 14px;
@@ -1872,6 +1890,12 @@ td {
   margin: 10px;
   margin-top: 5px;
   padding-left: 5%;
+}
+@media only screen and (max-width: 1024px) {
+  .home .grid-ctnr .static-block .sub-title {
+    font-size: 12px;
+    line-height: 13px;
+  }
 }
 .home .grid-ctnr .static-block img, .home .grid-ctnr .static-block .foot-logo {
   width: 76%;
