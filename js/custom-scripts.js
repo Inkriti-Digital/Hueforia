@@ -52,7 +52,7 @@ $(document).ready(function(){
 $(".grid-block").hover( function() {
 
 			slideDirection = Math.floor((Math.random() * 4) + 1);
-			console.log(slideDirection);
+			// console.log(slideDirection);
 
 			if(slideDirection==1){
 				$(".block-hover", this).css({
@@ -129,7 +129,7 @@ $(".grid-block").hover( function() {
 	    clearTimeout($.data(this, 'scrollTimer'));
 
 	    myScroll++;
-		$(".grid-block").css('margin-top', myScroll/2);
+		//$(".grid-block").css('margin-top', myScroll/2);
 
 		var eTop = $('.grid-ctnr').offset().top; //get the offset top of the element
 		var hideLockup = (eTop - $(window).scrollTop());
@@ -137,7 +137,7 @@ $(".grid-block").hover( function() {
 
   		if(hideLockup<=30){
   			$(".lockup").hide();
-  		} else if(hideLockup>=30){
+  		} else if( hideLockup >= 30){
   			$(".lockup").show();
   		}
 	    

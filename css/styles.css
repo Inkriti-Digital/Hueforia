@@ -1898,10 +1898,35 @@ td {
   }
 }
 .home .grid-ctnr .static-block img, .home .grid-ctnr .static-block .foot-logo {
-  width: 76%;
+  width: 72%;
   position: relative;
   right: -110px;
   margin-top: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .home .grid-ctnr .static-block img, .home .grid-ctnr .static-block .foot-logo {
+    width: 60%;
+    right: -110px;
+  }
+}
+.home .grid-ctnr .static-block .footer-links {
+  margin-top: 15px;
+  height: 15px;
+  margin-right: 10px;
+  text-align: right;
+}
+.home .grid-ctnr .static-block .footer-links .bullet {
+  font-size: 20px;
+  display: inline-block;
+  top: 3px;
+}
+.home .grid-ctnr .static-block .footer-links a {
+  color: #000;
+  font-size: 12px;
+  text-align: right;
+}
+.home .grid-ctnr .static-block .footer-links a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
