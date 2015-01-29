@@ -1781,7 +1781,9 @@ td {
   font-size: 17px;
 }
 .home .main-vid {
+  width: 100%;
   height: 100%;
+  overflow: hidden;
   margin: 0 auto;
 }
 .home .main-vid .video-js {
@@ -1804,6 +1806,13 @@ td {
 @media only screen and (max-width: 768px) {
   .home .grid-ctnr .grid-block {
     width: 50%;
+    height: 250px;
+    text-align: center;
+  }
+  .home .grid-ctnr .grid-block img {
+    height: 100%;
+    width: auto;
+    max-width: none;
   }
 }
 .home .grid-ctnr .grid-block .block-hover {
@@ -1860,7 +1869,12 @@ td {
 }
 @media only screen and (max-width: 768px) {
   .home .grid-ctnr .grid-half {
-    width: 25%;
+    width: 50%;
+    height: 250px;
+  }
+  .home .grid-ctnr .grid-half img {
+    height: auto;
+    width: 100%;
   }
 }
 .home .grid-ctnr .static-block {
