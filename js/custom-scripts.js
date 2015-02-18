@@ -154,7 +154,7 @@ $(".grid-block").hover( function() {
 	    
          	$(".grid-block img").animate({
 	   			top: 0
-	 		}, 300, 'easeOutQuad', 
+	 		}, 1000, 'easeOutQuad', 
 	 		function() {
 		    	myScroll = 0;
 		    	// randomMargin = 0;
