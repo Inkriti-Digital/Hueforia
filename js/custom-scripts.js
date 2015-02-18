@@ -2,6 +2,7 @@ $(document).ready(function(){
 	var navOut = false;
 	var myScroll=1;
 	var slideDirection = 0;
+	var blockCount = 1;
 	resizeElements();
 
 	//RESIZE-ELEMENTS
@@ -14,8 +15,6 @@ $(document).ready(function(){
     	console.log(mainVidHeight);
     	$('.main-vid').css( "height", mainVidHeight );
 	}
-
-
 
 	//NAV FUNCTIONS
 	$( ".nav-burger" ).mouseenter(function() {
@@ -106,52 +105,71 @@ $(".grid-block").hover( function() {
 			 $(".block-hover .block-link .sub-title", this).delay(200).animate({
   			 	opacity: 0
   			 }, 500, 'easeOutQuad', function() { /* Animation complete.*/ });
-			// $(".block-hover", this).css({
-			// 		'left':'auto',
-			// 	   	'right':'auto',
-			// 	   	'top':'auto',
-			// 	   	'bottom':'auto'
-			// 	});
-
-			// if(slideDirection==1){				
-			// 	$(".block-hover", this).delay(50).animate({ right: "-400px"}, 300, 'easeOutQuad', function() {});
-			// } else if(slideDirection==2){				
-			// 	$(".block-hover", this).delay(50).animate({ left: "-100%"}, 300, 'easeOutQuad', function() {});
-			// } else if(slideDirection==3){				
-			// 	$(".block-hover", this).delay(50).animate({ bottom: "-100%"}, 300, 'easeOutQuad', function() {});
-			// } else if(slideDirection==4){				
-			// 	$(".block-hover", this).delay(50).animate({ top: "-100%"}, 300, 'easeOutQuad', function() {});
-			// }
 	});
 
 	//SCROLL GRID EFFECT
 	$(window).scroll(function() {
-	    clearTimeout($.data(this, 'scrollTimer'));
-
-	    myScroll++;
-		//$(".grid-block").css('margin-top', myScroll/2);
+	    
 
 		var eTop = $('.grid-ctnr').offset().top; //get the offset top of the element
 		var hideLockup = (eTop - $(window).scrollTop());
-  		// console.log(eTop - $(window).scrollTop()); //position of the ele w.r.t window
+  		//console.log(eTop - $(window).scrollTop()); //position of the ele w.r.t window
 
   		if(hideLockup<=30){
   			$(".lockup").hide();
   		} else if( hideLockup >= 30){
   			$(".lockup").show();
   		}
-	    
+	   
+
+	    clearTimeout($.data(this, 'scrollTimer'));
+
+	    myScroll++;
+	  	var gridRand1 = (1+(Math.floor((Math.random() * 10) + 1))/(10));
+	  	var gridRand2 = (1+(Math.floor((Math.random() * 10) + 1))/(10));
+	  	var gridRand3 = (1+(Math.floor((Math.random() * 10) + 1))/(10));
+	  	var gridRand4 = (1+(Math.floor((Math.random() * 10) + 1))/(10));
+	  	var gridRand5 = (1+(Math.floor((Math.random() * 10) + 1))/(10));
+	  	var gridRand6 = (1+(Math.floor((Math.random() * 10) + 1))/(10));
+	  	var gridRand7 = (1+(Math.floor((Math.random() * 10) + 1))/(10));
+	  	var gridRand8 = (1+(Math.floor((Math.random() * 10) + 1))/(10));
+	  	var gridRand9 = (1+(Math.floor((Math.random() * 10) + 1))/(10));
+	  	var gridRand10 = (1+(Math.floor((Math.random() * 10) + 1))/(10));
+	    // console.log(randomMargin)
+		$("#gBlock1 img").css('top', (myScroll)*1.2);
+		$("#gBlock2 img").css('top', (myScroll)*1.9);
+		$("#gBlock3 img").css('top', (myScroll)*1.5);
+		$("#gBlock4 img").css('top', (myScroll)*1.1);
+		$("#gBlock5 img").css('top', (myScroll)*1.7);
+		$("#gBlock6 img").css('top', (myScroll)*1);
+		$("#gBlock7 img").css('top', (myScroll)*1.3);
+		$("#gBlock8 img").css('top', (myScroll)*1.75);
+		$("#gBlock9 img").css('top', (myScroll)*1.4);
+		$("#gBlock10 img").css('top', (myScroll)*1.8);
+		$("#gBlock11 img").css('top', (myScroll)*1.3);
+	   
 	    $.data(this, 'scrollTimer', setTimeout(function() {
 	        var finalScroll= myScroll; 
 	        // console.log(finalScroll);
 	    
-	        	$(".grid-block").animate({
-		    		marginTop: 0
-		  		}, 300, 'easeOutQuad', 
-		  		function() {
-			    	myScroll = 0;
-				});
+         	$(".grid-block img").animate({
+	   			top: 0
+	 		}, 300, 'easeOutQuad', 
+	 		function() {
+		    	myScroll = 0;
+		    	// randomMargin = 0;
+	 		});
 	     // console.log("Haven't scrolled in 100ms!");
-	    }, 50));
+	     }, 100));
+	});
+
+
+	$( ".grid-block" ).each(function( index ) {
+		
+		var newId = 'gBlock'+blockCount;
+		$(this).attr('id', newId);
+		blockCount++;
+	  
+	  	//console.log( index + ": " + $( this ).attr("id"));
 	});
 });
